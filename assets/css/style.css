@@ -1,14 +1,23 @@
-/* Index CSS */
-      /* Code to reorient the profile photo */
-      .rotate {
-        transform: rotate(90deg);
-      }
+body {
+  background-color: #ffffff;
+  }
+      
+#textstyle {
+  color:#777777
+  font-type: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  }
 
+header {
+  background-color: #ffffff;
+  }
 
-/* Contact CSS */
+h2 {
+  color:#4aaaa5
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
-/* Portfolio CSS */
-      /* Code to reorient the tiger photo */      
-      .rotate {
-        transform: rotate(90deg);
-      {
+/* Code to reorient the profile & tiger photos */
+.rotate {
+  transform: rotate(90deg);
+  }    
+      
