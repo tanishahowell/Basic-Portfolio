@@ -1,3 +1,34 @@
+/*NAV BAR*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: transparent;
+}
+
+.active {
+  background-color: #3CD0DA;
+}
+
+/*MAIN CONTENT*/
+
 body {
   background: #3CD0DA;
   background: -moz-linear-gradient(45deg, #3CD0DA 0%, #917CA5 50%, #3D2299 100%);
@@ -6,7 +37,7 @@ body {
   }
       
 #textstyle {
-  color:#2B186D;
+  color:#3D2299;
   font-type: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
 
@@ -15,8 +46,8 @@ header {
   }
 
 h2 {
-  color:#2B186D;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+  color:#3D2299;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Code to reorient the profile & tiger photos */
@@ -26,7 +57,8 @@ h2 {
       
 
   body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: ;
     font-size: 18px;
     line-height: 34px;
     color: #3d2299;
@@ -37,6 +69,7 @@ h2 {
     box-sizing: border-box;
   }
   
+
   /* general */
   
   .container {
@@ -61,7 +94,7 @@ h2 {
   h1,
   h2,
   h3 {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     color: #2B186D;
   }
@@ -91,32 +124,11 @@ h2 {
     border-bottom: 2px solid #cccccc;
   }
   
-  #logo {
-    float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaaa5;
-  }
   
   nav {
-    float: right;
+    float: left;
     margin-top: 100px;
   }
-
-  #demotext {
-    color: #FFFFFF;
-    background: #3d2299;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #3cd0da 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
-    color: #FFFFFF;
-    background: #3d2299;
-    }
   
   nav a {
     display: inline-block;
@@ -145,7 +157,7 @@ h2 {
     height: 0px;
   }
   
-  h3, h2 {
+  h1, h2 {
     padding-bottom: 20px;
     margin-bottom: 30px;
     line-height: 22px;
@@ -173,8 +185,8 @@ h2 {
   
   .work {
     position: relative;
-    float: ;
-    width: 274px;
+    float: left;
+    width: 960px;
     margin: 20px 0 25px;
     overflow: auto;
   }
@@ -255,7 +267,7 @@ h2 {
   }
   
   .myButton {
-    color: rgb(255, 255, 255); font-size: 18px; line-height: 20px; padding: 10px; border-radius: 29px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(60, 208, 218) 0%, rgb(145, 124, 165) 50%, rgb(61, 34, 153) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+    color: rgb(255, 255, 255); font-size: 18px; line-height: 20px; padding: 10px; border-radius: 29px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(60, 208, 218) 0%, rgb(145, 124, 165) 50%, rgb(61, 34, 153) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
     .myButton:hover {
     background: #3CD0DA; }
     .myButton:active {
@@ -272,3 +284,73 @@ h2 {
       .clearfix { display: inline-block; }
       * html .clearfix { height: 1%; }
       .clearfix { display: block; }
+
+  @media only screen and (max-width: 980px) {
+    .container {
+      padding: 0 20px;
+      max-width: 768px;
+    }
+    #main-container {
+      padding-top: 130px;
+    }
+    .main-section {
+      max-width: 420px;
+    }
+    .work {
+      width: 100%;
+    }
+    .auth-image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+  .main-section, .sidebar {
+    max-width: 100%;
+  }
+  #main-container {
+    overflow: auto;
+  }
+  .sidebar {
+    margin-bottom: 40px;
+  }
+  .work {
+    width: 47%;
+    margin-bottom: 10px;
+  }
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+  .work.work:nth-child(odd) {
+    float: right;
+  }
+  .auth-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #masterhead {
+    position: static;
+    margin-bottom: 20px;
+  }
+  header.container {
+    padding: 0;
+  }
+  #main-container {
+    padding-top: 0;
+  }
+  #logo, .work, .auth-image {
+    width: 100%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+  }
+  nav a {
+    width: 30%;
+    padding-left: 0;
+  }
+}
