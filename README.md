@@ -8,7 +8,7 @@ My Professional Webpage: https://tanishahowell.github.io/Basic-Portfolio/
 
 
 <img src="assets\images\train-time-image.jpg" alt="Photo of Train Time app" width="100">
-Train Time Train Schedule: https://tanishahowell.github.io/train-time/
+Train Time Schedule: https://tanishahowell.github.io/train-time/
 
 
 <img src="assets\images\crystal-collector-image.jpg" alt="Photo of Crystal Collector game app" width="100">
